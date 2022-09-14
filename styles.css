@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-size: 18px;
+  }
+
+  .header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .headerNav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .nav{
+    display: flex;
+    align-items: center;
+  }
+
+  .nav ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  .nav li {
+    float: left;
+  }
+
+  .nav li a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 30px;
+  }
+
+  .nav li a:hover{
+    text-decoration: underline;
+    transition-duration: 350ms;
+  }
+
+  .contact{
+    padding: 12px;
+    width: 120px;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: none;
+  }
+
+  .contact:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 100%, 0.37);
+    transition-duration: 500ms;
+  }
+
+  .headerTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .headerTitle h1{
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 50px;
+  }
+
+  .headerTitle img{
+    margin-top: 50px;
+  }
+
+  .container{
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .transform, .stand, .twoImage {
+    display: flex;
+    width: 100%;
+  }
+
+  .transformContent, .standContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .transformContent h2, .standContent h2{
+    width: 80%;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 40px;
+    padding: 10px 50px;
+  }
+  .transformContent p, .standContent p {
+    width: 80%;
+    padding: 10px 50px;
+    line-height: 1.8rem;
+    color: hsl(232, 10%, 55%);
+  }
+  .transformContent a, .standContent a {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(212, 27%, 19%);
+    position: relative;
+    z-index: 0;
+  }
+    .transformContent a::before {
+        content: "";
+        position: absolute;
+        width: 25%;
+        height: 10px;
+        bottom: 10px;
+        background: hsl(51, 100%, 49%);
+        border-radius: 10px;
+        z-index: -1;
+        opacity: 0.3;
+    }
+
+    .transformContent a:hover::before {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    .standContent a::before {
+        content: "";
+        position: absolute;
+        width: 25%;
+        height: 10px;
+        bottom: 10px;
+        background: hsl(7, 99%, 70%);
+        border-radius: 10px;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    .standContent a:hover::before {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+
+  .transformImg, .standImg{
+    width: 50%;
+  }
+
+  .leftImg{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .leftContent, .rightContent{
+    width: 80%;
+    padding: 70px;
+    margin-top: 350px;
+    text-align: center;
+  }
+  
+  .leftContent h2, .rightContent h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 40px;
+    padding: 20px 0px;
+    color: hsl(198, 62%, 26%);
+  }
+
+  .leftContent p, .rightContent p {
+    line-height: 1.8rem;
+    padding: 20px 0px;
+    color: hsl(213, 9%, 39%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+  }
+
+  .rightImg{
+    width: 50%;
+    height: 600px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .testi{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 100px;
+  }
+
+  .testi h2{
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: hsl(232, 10%, 55%);
+    margin-top: 50px;
+  }
+
+  .testimonials {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .cardTesti{
+    width: 100%;
+  }
+
+  .cardImg{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .cardImg p {
+    padding: 20px 30px;
+    line-height: 2rem;
+  }
+
+  .cardImg h2{
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    text-transform: none;
+  }
+
+  .roles{
+    color: hsl(232, 10%, 55%);
+  }
+  .formImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .cardListImage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .cardImage{
+    width: 25%;
+    height: 100%;
+  }
+
+  .footer{
+    width: 100%;
+    height: 400px;
+    background-color: hsl(168, 34%, 41%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 0px 50px;
+  }
+
+  .listFooter{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+  }
+
+  .listFooter a{
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+  }
+
+  .listFooter a:hover{
+    color: hsl(0, 0%, 100%);
+  }
+
+  .sosmedFooter{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+
+  .imgFooter{
+    filter: invert(1) brightness(0)
+  }
+  
+  .imgFooter:hover{
+    filter: brightness(0) invert(1);
+  }
+
+  
+  
