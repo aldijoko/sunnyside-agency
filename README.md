@@ -59,20 +59,31 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+.menuMobile::before{
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -25px;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-bottom: 100px solid hsl(0, 0%, 100%);
+    }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+document.getElementById('toggle').addEventListener('click', clicked);
+
+function clicked() {
+    let x = document.getElementById('menusM');
+    if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+}
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
@@ -83,8 +94,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Onclick HTML](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar) - This helped me for onclick hamburger button
+- [Tooltip](https://www.w3schools.com/css/css_tooltip.asp) - This helped me to create tooltip on up square navigation button.
 
 ## Author
 
